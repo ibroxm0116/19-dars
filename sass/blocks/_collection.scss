@@ -1,0 +1,110 @@
+.collection__inner {
+    margin-bottom: 190px;
+    padding: 126px 0 0;
+    background-image: url(../images/collection-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.collection__list {
+    display: flex;
+    margin: 0;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.collection__content {
+    width: 100%;
+    max-width: 255px;
+}
+
+.collection__img {
+    margin-bottom: 71px;
+}
+
+.collection__subtitle {
+    margin: 0 0 24px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+}
+
+.collection__text {
+    margin: 0;
+    color: #333D4B;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    .collection__inner {
+        padding: 60px 0 0;
+        background-image: url("../images/collection-bg-desktop.png");
+    }
+
+    .collection__list {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .collection__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .collection__item:not(:first-child) {
+        margin-bottom: 32px;
+    }
+
+    .collection__content {
+        width: 100%;
+        max-width: 282px;
+    }
+
+    .collection__img {
+        margin-bottom: 0;
+    }
+
+    .collection__subtitle {
+        text-align: start;
+    }
+
+    .collection__text {
+        text-align: start;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .collection__inner {
+        padding: 85px 0 0;
+        background-image: url('../images/collection-bg-mobile.png');
+    }
+
+    .collection__list {
+        padding: 0;
+    }
+
+    .collection__item {
+        display: block;
+        text-align: center;
+    }
+
+    .collection__content {
+        margin: 0 auto;
+    }
+
+    .collection__subtitle {
+        text-align: center;
+    }
+
+    .collection__text {
+        text-align: center;
+    }
+}

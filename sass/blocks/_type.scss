@@ -1,0 +1,256 @@
+.type {
+    margin-bottom: 168px;
+}
+
+.type__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type__list {
+    @include list-unstyled;
+    width: 255px;
+}
+
+.type__item {
+    opacity: 0.25;
+}
+
+.type__item:hover {
+    opacity: 0.6;
+}
+
+.type__item:active {
+    opacity: 1;
+}
+
+.type__item:not(:last-child) {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #83888F;
+}
+
+.type__item::before {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F
+}
+
+.type__item:first-child::before {
+    margin-right: 28px;
+    color: #0E8784;
+    content: '01';
+}
+
+.type__item--two::before {
+    margin-right: 24px;
+    content: '02';
+}
+
+.type__item--three::before {
+    margin-right: 25px;
+    content: '03';
+}
+
+.type__item--four::before {
+    margin-right: 23px;
+    content: '04';
+}
+
+.type__item--five::before {
+    margin-right: 25px;
+    content: '05';
+}
+
+.type__link {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #333D4B;
+}
+
+.cofe {
+    margin-bottom: 88px;
+    width: 100%;
+    max-width: 730px;
+}
+
+.cofe__top {
+    margin-bottom: 56px;
+    list-style-type: none;
+}
+
+.cofe__title {
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.cofe__title::after {
+    margin-left: auto;
+    margin-top: -30px;
+    display: block;
+    width: 18px;
+    height: 12px;
+    background-image: url('../../images/cofe-btn.svg');
+    content: '';
+}
+
+.cofe__input:checked~.card {
+    background-color: #0E8784;
+}
+
+.cofe__input:checked~.card>.card__title {
+    color: #fff;
+}
+
+.cofe__input:checked~.card>.card__text {
+    color: #fff;
+}
+
+.cofe__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 100%;
+    max-width: 228px;
+    padding: 32px 28px 84px;
+    background: #F4F1EB;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: #FDD6BA;
+}
+
+.card__title {
+    margin: 0 0 24px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.card__text {
+    margin: 0;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.cofe__content {
+    margin-bottom: 40px;
+    padding: 51px 64px;
+    width: 100%;
+    max-width: 730px;
+    background-image: url('../../images/type-bg.png');
+    background-repeat: no-repeat;
+}
+
+.summary {
+    margin: 0 0 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.cofe__quote {
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.cofe__span {
+    color: #0E8784;
+}
+
+.cofe__btn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 0 16px;
+    width: 217px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+}
+
+
+@media only screen and (max-width:768px) {
+    .type__list {
+        display: none;
+    }
+
+    .cofe__title {
+        font-size: 32px;
+    }
+
+    .cofe__content {
+        padding: 27px 44px;
+    }
+
+    .cofe__btn {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .cofe__top {
+        margin-bottom: 32px;
+    }
+
+    .cofe__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .cofe__bottom {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 24px 25px;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .card {
+        margin-bottom: 16px;
+    }
+
+    .card__title {
+        margin-bottom: 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .cofe__content {
+        padding: 32px 24px;
+    }
+
+    .cofe__quote {
+        font-size: 24px;
+    }
+}

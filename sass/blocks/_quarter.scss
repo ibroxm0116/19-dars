@@ -1,0 +1,118 @@
+.quarter__title {
+    margin: 0 0 72px 85px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.quarter__list {
+    @include list-unstyled;
+    padding-left: 85px;
+    margin-bottom: 168px;
+    display: flex;
+    align-items: center;
+}
+
+.quarter__item {
+    width: 100%;
+    max-width: 285px;
+}
+
+.quarter__item::before {
+    display: block;
+    content: '';
+}
+
+.quarter__item:first-child::before {
+    padding-bottom: 45px;
+    width: 40px;
+    height: 50px;
+    background-image: url('../../images/Combined-Shape.svg');
+}
+
+.quarter__item:nth-child(2)::before {
+    padding-bottom: 45px;
+    width: 51px;
+    height: 50px;
+    background-image: url('../../images/canada.svg');
+}
+
+.quarter__item:last-child::before {
+    padding-bottom: 48px;
+    width: 49px;
+    height: 44px;
+    background-image: url('../../images/australia.svg');
+}
+
+.quarter__item + .quarter__item {
+    margin-left: 95px;
+}
+
+.quarter__subtitle {
+    margin: 0 0 24px;
+    padding-top: 45px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.quarter__sublist {
+    @include list-unstyled;
+}
+
+.quarter__subitem {
+    line-height: 26px;
+    color: #333D4B;
+}
+
+@media only screen and (max-width:768px) {
+    .quarter__title {
+        margin-left: 0;
+    }
+
+    .quarter__list {
+        padding: 0;
+        margin-bottom: 144px;
+    }
+
+    .quarter__item + .quarter__item {
+        margin-left: 9px;
+    }
+
+    .quarter__subtitle {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .quarter__title {
+        text-align: center;
+    }
+
+    .quarter__list {
+        margin-bottom: 120px;
+        flex-direction: column;
+    }
+
+    .quarter__item {
+        text-align: center;
+    }
+
+    .quarter__item::before {
+        margin: 0 auto;
+    }
+
+    .quarter__item + .quarter__item {
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+
+    .quarter__subtitle {
+        margin-bottom: 22px;
+        font-size: 28px;
+    }
+}

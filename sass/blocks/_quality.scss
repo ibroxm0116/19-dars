@@ -1,0 +1,92 @@
+.quality__inner {
+    margin-bottom: 168px;
+    position: relative;
+    padding: 88px 0 176px 85px;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.quality__box {
+    position: absolute;
+    top: -80px;
+    right: 70px;
+    width: 445px;
+    height: 474px;
+    background-image: url('../../images/quality.png');
+    background-repeat: no-repeat;
+    background-position: calc(50%);
+    content: '';
+}
+
+.quality__content {
+    width: 100%;
+    max-width: 540px;
+}
+
+.quality__title {
+    margin: 0 0 32px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+
+.quality__text {
+    margin: 0;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:768px) {
+    .quality__inner {
+        padding: 224px 74px 67px;
+        text-align: center;
+    }
+
+    .quality__box {
+        top: -120px;
+        right: 0;
+        left: 50px;
+        width: 100%;
+        max-width: 573px;
+        height: 320px;
+        background-image: url('../../images/quality-tablet.png');
+    }
+
+    .quality__title {
+        margin: 0 0 24px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .quality__text {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .quality__inner {
+        padding: 146px 24px 61px;
+    }
+
+    .quality__box {
+        width: 100%;
+        max-width: 279px;
+        height: 100%;
+        max-height: 156px;
+        top: -78px;
+        left: 70px;
+        background-image: url('../../images/quality-mobile.png');
+    }
+
+    .quality__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}

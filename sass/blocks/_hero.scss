@@ -1,0 +1,127 @@
+.hero__inner {
+    margin-bottom: 136px;
+    padding: 117px 0 117px 85px;
+    background-image: url("../images/hero-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hero__content {
+    width: 493px;
+}
+
+.hero__title {
+    margin: 0 0 32px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+
+.hero__box {
+    width: 445px;
+}
+
+.hero__text {
+    margin: 0 0 56px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+
+.hero__link {
+    display: inline-block;
+    padding: 15px 31px;
+    width: 100%;
+    max-width: 217px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    background: #0E8784;
+    border-radius: 6px;
+    text-decoration: none;
+
+
+    &:hover {
+        background-color: #66D2CF;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero__inner {
+        padding: 104px 0 104px 58px;
+        background-image: url("../images/hero-bg-tablet.jpg");
+    }
+
+    .hero__content {
+        width: 100%;
+        max-width: 329px;
+    }
+
+    .hero__title {
+        margin: 0 0 24px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .hero__box {
+        width: 100%;
+        max-width: 398px;
+    }
+
+    .hero__text {
+        margin: 0 0 40px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .hero__inner {
+        padding: 100px 24px;
+        background-image: url("../images/hero-bg-mobile.jpg");
+    }
+
+    .hero__content {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .hero__title {
+        margin: 0 0 24px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .hero__box {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .hero__text {
+        margin: 0 0 40px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .hero__link {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 217px;
+    }
+}
+
+@media only screen and (max-width:355px) {
+    .hero__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
